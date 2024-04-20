@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- normalize -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- owl carousel  -->
+        <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
+        <!-- tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- custom tailwind -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primaryColor: "#3ab77d",
+                            secondaryColor: "#d9f7e8",
+                            content: "#7e7e7e",
+                        },
+                    },
+                    container: {
+                        center: true,
+                    },
+                },
+            };
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+            <!-- font awesome -->
+            <script src="https://kit.fontawesome.com/7ad276cb0d.js" crossorigin="anonymous"></script>
+        <script src="my_jquery_functions.js"></script>
+        <link rel="stylesheet" href="main.css" />
+
+    </head>
+
+    <body>
+        <!-- start top nav -->
+        <div
+            class="flex justify-between items-center border-b border-gray-200 h-14 px-3">
+            <!-- start left side -->
+            <ul class="flex gap-2 text-title *: *:after:text-content">
+                <li
+                    class="hover:text-black  text-content  after:content-['_|'] after:text-content">
+                    About US
+                </li>
+                <li
+                    class="hover:text-black  text-content after:content-['_|'] after:text-content">
+                    My Account
+                </li>
+                <li
+                    class="hover:text-black text-content  after:content-['_|'] after:text-content">
+                    Wishlist
+                </li>
+                <li class="hover:text-black text-content ">Order Tracking</li>
+            </ul>
+            <!-- end left side -->
+            <!-- start right side -->
+            <ul class="flex gap-2 text-title">
+                <li class="text-content">Need help? Call Us:</li>
+                <li class="text-primaryColor">+ 1800 900</li>
+                <li class="">
+                    <div
+                        class="relative  group hover:text-black before:content-['|_'] text-content">
+                        English
+                        <ul
+                            class="absolute flex flex-col gap-0 invisible bg-white opacity-0 top-40 border px-7 py-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-0 transition-all duration-300 *:flex *:flex-col *:gap-0 *:justify-center *:items-start">
+                            <li class=""><span>🇫🇷</span>francais</li>
+                            <li class=""><span>🇩🇪</span> Deutsch</li>
+                            <li class=""><span>🇫🇷</span> pcascsa</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="">
+                    <div
+                        class="relative group hover:text-black before:content-['|_'] text-content">
+                        USD
+                        <ul
+                            class="absolute flex flex-col invisible bg-white opacity-0 top-40 border p-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-[-60px] transition-all duration-300 *:flex">
+                            <li class="">
+                                <span>🇫🇷</span>
+                                francais
+                            </li>
+                            <li class=""><span>🇩🇪</span>Deutsch</li>
+                            <li class=""><span>🇫🇷</span> pcascsa</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end top nav -->
+        <!-- start middle nav -->
+        <div
+            class="py-5 px-3 border-b border-gray-200 flex gap-10 justify-between items-center">
+            <!-- logo -->
+            <div class="">
+                <img src="assets/logo.svg" alt="logo" />
+            </div>
+            <!-- search -->
+            <div
+                class="relative border-2 flex-grow  flex gap-2 items-center border-secondaryColor p-3 rounded-md">
+                <h4
+                    class="font-semibold cursor-pointer flex justify-between w-32 after:content-['|'] after:text-content"
+                    id="category">
+                    All Categories
+                </h4>
+                <form class="flex  flex-grow">
+                    <input type="hidden" name="" value="" id="form-input" />
+                    <!-- dropdown -->
+                    <div
+                        class="hidden flex-col gap-2 bg-white border border-gray-200 border-t-white absolute left-0 top-12 w-48 h-64 p-3 rounded-sm"
+                        id="dropdown">
+                        <input
+                            type="search"
+                            name=""
+                            id="cat-search"
+                            class="w-full p-1 border-2 focus:outline-none border-secondaryColor rounded-md" />
+                        <ul
+                            class="flex flex-col gap-3 overflow-x-scroll"
+                            id="select">
+                            <li class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
+                                All Categories
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                milk
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                wine
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                eggs
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                food
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                clothes
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                ice cream
+                            </li>
+                            <li class="hover:bg-secondaryColor py-1 ps-1">
+                                Rice
+                            </li>
+                        </ul>
+                        <div id="no-result" class="text-content py-1 ps-1 hidden">
+                            No results found
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center flex-grow w-full">
+
+                        <input
+                        class="border-0 focus:border-0 focus:outline-none flex-grow "
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search for items..." />
+                        <i class="fa-solid fa-magnifying-glass text-content"></i>
+                    </div>
+                </form>
+            </div>
+            <!-- right side -->
+            <ul class="flex gap-3 *:flex *:gap-1 text-content">
+                <li class="">
+                    <div
+                        class="relative after:content-['3'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                        <img src="assets/icon-compare.svg" alt="" class=" " />
+                    </div>
+
+                    Compare
+                </li>
+                <li class="">
+                    <div
+                        class="relative after:content-['6'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                        <img src="assets/icon-heart.svg" alt="" class="" />
+                    </div>
+                    Wishlist
+                </li>
+                <li class="">
+                    <div
+                        class="relative after:content-['2'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                        <img src="assets/icon-cart.svg" alt="" class="" />
+                    </div>
+                    Cart
+                </li>
+                <li class="">
+                    <img src="assets/icon-user.svg" alt="" class="" />Account
+                </li>
+            </ul>
+        </div>
+
+        <!-- jquery -->
+
+        <!-- owl carousel  -->
+        <!-- <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script> -->
+        <!-- java script -->
+        <script src="main.js"></script>
+    </body>
+</html>
