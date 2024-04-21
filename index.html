@@ -14,56 +14,35 @@
         <!-- owl carousel  -->
         <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
         <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
-        <!-- tailwind -->
-        <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- custom tailwind -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            primaryColor: "#3ab77d",
-                            secondaryColor: "#d9f7e8",
-                            content: "#7e7e7e",
-                        },
-                    },
-                    container: {
-                        center: true,
-                    },
-                },
-            };
-        </script>
+        <!-- font awesome -->
         <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            src="https://kit.fontawesome.com/7ad276cb0d.js"
             crossorigin="anonymous"></script>
-            <!-- font awesome -->
-            <script src="https://kit.fontawesome.com/7ad276cb0d.js" crossorigin="anonymous"></script>
-        <script src="my_jquery_functions.js"></script>
-        <link rel="stylesheet" href="main.css" />
 
+        <link href="./output.css" rel="stylesheet" />
     </head>
 
     <body>
         <!-- start top nav -->
+        <div class="border-b border-gray-200">
         <div
-            class="flex justify-between items-center border-b border-gray-200 h-14 px-3">
+            class="flex justify-between container items-center  h-14 px-3">
             <!-- start left side -->
             <ul class="flex gap-2 text-title *: *:after:text-content">
                 <li
-                    class="hover:text-black  text-content  after:content-['_|'] after:text-content">
+                    class="hover:text-black text-content after:content-['_|'] after:text-content">
                     About US
                 </li>
                 <li
-                    class="hover:text-black  text-content after:content-['_|'] after:text-content">
+                    class="hover:text-black text-content after:content-['_|'] after:text-content">
                     My Account
                 </li>
                 <li
-                    class="hover:text-black text-content  after:content-['_|'] after:text-content">
+                    class="hover:text-black text-content after:content-['_|'] after:text-content">
                     Wishlist
                 </li>
-                <li class="hover:text-black text-content ">Order Tracking</li>
+                <li class="hover:text-black text-content">Order Tracking</li>
             </ul>
             <!-- end left side -->
             <!-- start right side -->
@@ -72,7 +51,7 @@
                 <li class="text-primaryColor">+ 1800 900</li>
                 <li class="">
                     <div
-                        class="relative  group hover:text-black before:content-['|_'] text-content">
+                        class="relative group hover:text-black before:content-['|_'] text-content">
                         English
                         <ul
                             class="absolute flex flex-col gap-0 invisible bg-white opacity-0 top-40 border px-7 py-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-0 transition-all duration-300 *:flex *:flex-col *:gap-0 *:justify-center *:items-start">
@@ -99,23 +78,26 @@
                 </li>
             </ul>
         </div>
+        </div>
+
         <!-- end top nav -->
         <!-- start middle nav -->
+        <div class="border-b border-gray-200">
         <div
-            class="py-5 px-3 border-b border-gray-200 flex gap-10 justify-between items-center">
+            class="py-5 px-3  flex gap-10 container justify-between items-center">
             <!-- logo -->
             <div class="">
                 <img src="assets/logo.svg" alt="logo" />
             </div>
             <!-- search -->
             <div
-                class="relative border-2 flex-grow  flex gap-2 items-center border-secondaryColor p-3 rounded-md">
+                class="relative border-2 flex-grow flex gap-2 items-center border-secondaryColor p-3 rounded-md">
                 <h4
                     class="font-semibold cursor-pointer flex justify-between w-32 after:content-['|'] after:text-content"
                     id="category">
                     All Categories
                 </h4>
-                <form class="flex  flex-grow">
+                <form class="flex flex-grow">
                     <input type="hidden" name="" value="" id="form-input" />
                     <!-- dropdown -->
                     <div
@@ -129,7 +111,8 @@
                         <ul
                             class="flex flex-col gap-3 overflow-x-scroll"
                             id="select">
-                            <li class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
+                            <li
+                                class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
                                 All Categories
                             </li>
                             <li class="hover:bg-secondaryColor py-1 ps-1">
@@ -154,18 +137,21 @@
                                 Rice
                             </li>
                         </ul>
-                        <div id="no-result" class="text-content py-1 ps-1 hidden">
+                        <div
+                            id="no-result"
+                            class="text-content py-1 ps-1 hidden">
                             No results found
                         </div>
                     </div>
-                    <div class="flex justify-between items-center flex-grow w-full">
-
+                    <div
+                        class="flex justify-between items-center flex-grow w-full">
                         <input
-                        class="border-0 focus:border-0 focus:outline-none flex-grow "
-                        type="text"
-                        id="searchInput"
-                        placeholder="Search for items..." />
-                        <i class="fa-solid fa-magnifying-glass text-content"></i>
+                            class="border-0 focus:border-0 focus:outline-none flex-grow"
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search for items..." />
+                        <i
+                            class="fa-solid fa-magnifying-glass text-content"></i>
                     </div>
                 </form>
             </div>
@@ -198,9 +184,13 @@
                 </li>
             </ul>
         </div>
+    </div>
 
         <!-- jquery -->
-
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
         <!-- owl carousel  -->
         <!-- <script src="jquery.min.js"></script>
         <script src="owlcarousel/owl.carousel.min.js"></script> -->
