@@ -9,3 +9,10 @@
 li{
     cursor: pointer;
 }
+.tt{
+    width: 100%;
+
+}
+.owl-item{
+    float: left;
+}

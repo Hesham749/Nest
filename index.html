@@ -12,179 +12,1019 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
         <!-- owl carousel  -->
-        <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
+        <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" /> -->
 
         <!-- font awesome -->
-        <script
-            src="https://kit.fontawesome.com/7ad276cb0d.js"
-            crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
 
         <link href="./output.css" rel="stylesheet" />
     </head>
 
     <body>
-        <!-- start top nav -->
-        <div class="border-b border-gray-200">
-        <div
-            class="flex justify-between container items-center  h-14 px-3">
-            <!-- start left side -->
-            <ul class="flex gap-2 text-title *: *:after:text-content">
-                <li
-                    class="hover:text-black text-content after:content-['_|'] after:text-content">
-                    About US
-                </li>
-                <li
-                    class="hover:text-black text-content after:content-['_|'] after:text-content">
-                    My Account
-                </li>
-                <li
-                    class="hover:text-black text-content after:content-['_|'] after:text-content">
-                    Wishlist
-                </li>
-                <li class="hover:text-black text-content">Order Tracking</li>
-            </ul>
-            <!-- end left side -->
-            <!-- start right side -->
-            <ul class="flex gap-2 text-title">
-                <li class="text-content">Need help? Call Us:</li>
-                <li class="text-primaryColor">+ 1800 900</li>
-                <li class="">
-                    <div
-                        class="relative group hover:text-black before:content-['|_'] text-content">
-                        English
-                        <ul
-                            class="absolute flex flex-col gap-0 invisible bg-white opacity-0 top-40 border px-7 py-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-0 transition-all duration-300 *:flex *:flex-col *:gap-0 *:justify-center *:items-start">
-                            <li class=""><span>🇫🇷</span>francais</li>
-                            <li class=""><span>🇩🇪</span> Deutsch</li>
-                            <li class=""><span>🇫🇷</span> pcascsa</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="">
-                    <div
-                        class="relative group hover:text-black before:content-['|_'] text-content">
-                        USD
-                        <ul
-                            class="absolute flex flex-col invisible bg-white opacity-0 top-40 border p-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-[-60px] transition-all duration-300 *:flex">
-                            <li class="">
-                                <span>🇫🇷</span>
-                                francais
-                            </li>
-                            <li class=""><span>🇩🇪</span>Deutsch</li>
-                            <li class=""><span>🇫🇷</span> pcascsa</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        </div>
-
-        <!-- end top nav -->
-        <!-- start middle nav -->
-        <div class="border-b border-gray-200">
-        <div
-            class="py-5 px-3  flex gap-10 container justify-between items-center">
-            <!-- logo -->
-            <div class="">
-                <img src="assets/logo.svg" alt="logo" />
+        <!-- start header -->
+        <header>
+            <!-- start top nav -->
+            <div class="border-b border-gray-200">
+                <div
+                    class="flex justify-between container items-center h-14 px-3">
+                    <!-- start left side -->
+                    <ul
+                        class="flex gap-2 text-title *: *:after:text-content *:transition-all *:duration-300">
+                        <li
+                            class="hover:text-black text-content after:content-['_|'] after:font-extralight after:text-content">
+                            About US
+                        </li>
+                        <li
+                            class="hover:text-black text-content after:content-['_|'] after:font-extralight after:text-content">
+                            My Account
+                        </li>
+                        <li
+                            class="hover:text-black text-content after:content-['_|'] after:font-extralight after:text-content">
+                            Wishlist
+                        </li>
+                        <li class="hover:text-black text-content">
+                            Order Tracking
+                        </li>
+                    </ul>
+                    <!-- end left side -->
+                    <!-- start right side -->
+                    <ul class="flex gap-2 text-title">
+                        <li class="text-content">Need help? Call Us:</li>
+                        <li class="text-primaryColor font-bold">+ 1800 900</li>
+                        <li class="">
+                            <div
+                                class="relative group hover:text-black before:content-['|_'] before:font-extralight text-content transition-all duration-300">
+                                English
+                                <i class="fa-light fa-angle-down"></i>
+                                <ul
+                                    class="absolute flex z-30 flex-col gap-0 invisible bg-white opacity-0 top-32 border px-7 py-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-0 transition-all duration-300 *:flex *:flex-col *:gap-0 *:justify-center *:items-start">
+                                    <li class=""><span>🇫🇷</span>francais</li>
+                                    <li class=""><span>🇩🇪</span> Deutsch</li>
+                                    <li class=""><span>🇫🇷</span> pcascsa</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div
+                                class="relative group hover:text-black before:content-['|_'] before:font-extralight text-content transition-all duration-300">
+                                USD
+                                <i class="fa-light fa-angle-down"></i>
+                                <ul
+                                    class="absolute flex flex-col z-30 invisible bg-white opacity-0 top-32 border p-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible right-0 transition-all duration-300 *:flex *:gap-3">
+                                    <li class="">
+                                        <span>🇫🇷</span>
+                                        francais
+                                    </li>
+                                    <li class=""><span>🇩🇪</span>Deutsch</li>
+                                    <li class=""><span>🇫🇷</span> pcascsa</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- search -->
-            <div
-                class="relative border-2 flex-grow flex gap-2 items-center border-secondaryColor p-3 rounded-md">
-                <h4
-                    class="font-semibold cursor-pointer flex justify-between w-32 after:content-['|'] after:text-content"
-                    id="category">
-                    All Categories
-                </h4>
-                <form class="flex flex-grow">
-                    <input type="hidden" name="" value="" id="form-input" />
-                    <!-- dropdown -->
+
+            <!-- end top nav -->
+            <!-- start middle nav -->
+            <div class="border-b border-gray-200">
+                <div
+                    class="py-5 px-3 flex gap-10 container justify-between items-center h-32">
+                    <!-- logo -->
+                    <div class="h-[54px]">
+                        <img class="h-full" src="assets/logo.svg" alt="logo" />
+                    </div>
+                    <!-- search -->
                     <div
-                        class="hidden flex-col gap-2 bg-white border border-gray-200 border-t-white absolute left-0 top-12 w-48 h-64 p-3 rounded-sm"
-                        id="dropdown">
-                        <input
-                            type="search"
-                            name=""
-                            id="cat-search"
-                            class="w-full p-1 border-2 focus:outline-none border-secondaryColor rounded-md" />
-                        <ul
-                            class="flex flex-col gap-3 overflow-x-scroll"
-                            id="select">
-                            <li
-                                class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
-                                All Categories
+                        class="relative border-2 flex-grow flex gap-2 items-center border-[#BCE3C9] p-3 rounded-[4px]">
+                        <h4
+                            class="font-semibold cursor-pointer flex text-gray-700 justify-between w-32 after:content-['|'] after:text-content after:font-extralight"
+                            id="category">
+                            All Categories
+                        </h4>
+                        <form class="flex flex-grow">
+                            <input
+                                type="hidden"
+                                name=""
+                                value=""
+                                id="form-input" />
+                            <!-- dropdown -->
+                            <div
+                                class="hidden flex-col gap-2 bg-white border border-gray-200 border-t-white absolute left-0 top-12 w-48 h-64 p-3 rounded-sm z-40"
+                                id="dropdown">
+                                <input
+                                    type="search"
+                                    name=""
+                                    id="cat-search"
+                                    class="w-full p-1 border-2 focus:outline-none border-secondaryColor rounded-md" />
+                                <ul
+                                    class="flex flex-col gap-3 overflow-x-scroll text-gray-700"
+                                    id="select">
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
+                                        All Categories
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        milk
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        wine
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        eggs
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        food
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        clothes
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        ice cream
+                                    </li>
+                                    <li
+                                        class="hover:bg-secondaryColor py-1 ps-1">
+                                        Rice
+                                    </li>
+                                </ul>
+                                <div
+                                    id="no-result"
+                                    class="text-content py-1 ps-1 hidden">
+                                    No results found
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-between items-center flex-grow w-full">
+                                <input
+                                    class="border-0 focus:border-0 focus:outline-none flex-grow"
+                                    type="text"
+                                    id="searchInput"
+                                    placeholder="Search for items..." />
+                                <i
+                                    class="fa-solid fa-magnifying-glass text-content"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- right side -->
+                    <div class="flex gap-6 items-center">
+                        <div class="relative">
+                            <div
+                                class="items-center justify-start ps-3 gap-2 cursor-pointer flex text-primaryColor w-40 border border-gray-200 rounded-md bg-white hover:translate-y-[-2px] transition-all duration-300">
+                                <i
+                                    class="fa-regular fa-location-dot text-content"></i>
+                                <h4 class="flex-grow h-full py-1" id="location">
+                                    Your Location
+                                </h4>
+                            </div>
+
+                            <form class="flex flex-grow">
+                                <input
+                                    type="hidden"
+                                    name=""
+                                    value=""
+                                    id="location-input" />
+                                <!-- location dropdown -->
+                                <div
+                                    class="hidden flex-col gap-2 bg-white border border-gray-200 border-t-white absolute left-0 top-12 w-48 h-64 p-3 rounded-sm z-40"
+                                    id="location-dropdown">
+                                    <input
+                                        type="search"
+                                        name=""
+                                        id="location-search"
+                                        class="w-full p-1 border-2 focus:outline-none border-secondaryColor rounded-md" />
+                                    <ul
+                                        class="flex flex-col gap-3 overflow-x-scroll text-gray-700"
+                                        id="location-select">
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1 bg-gray-200">
+                                            Your Location
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            milk
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            wine
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            eggs
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            food
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            clothes
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            ice cream
+                                        </li>
+                                        <li
+                                            class="hover:bg-secondaryColor py-1 ps-1">
+                                            Rice
+                                        </li>
+                                    </ul>
+                                    <div
+                                        id="location-no-result"
+                                        class="text-content py-1 ps-1 hidden">
+                                        No results found
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <ul class="flex gap-3 *:flex *:gap-1 text-content">
+                            <li class="">
+                                <div
+                                    class="relative after:content-['3'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                                    <img
+                                        src="assets/icon-compare.svg"
+                                        alt=""
+                                        class=" " />
+                                </div>
+
+                                Compare
                             </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                milk
+                            <li class="">
+                                <div
+                                    class="relative after:content-['6'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                                    <img
+                                        src="assets/icon-heart.svg"
+                                        alt=""
+                                        class="" />
+                                </div>
+                                Wishlist
                             </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                wine
+                            <li id="cart" class="relative group">
+                                <div
+                                    class="relative after:content-['2'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
+                                    <img
+                                        src="assets/icon-cart.svg"
+                                        alt=""
+                                        class="" />
+                                </div>
+                                Cart
+                                <!-- cart dropdown -->
+                                <div
+                                    id="cart-dropdown"
+                                    class="invisible opacity-0 flex absolute top-10 right-0 border w-fit text-nowrap flex-col gap-7 bg-white px-5 py-5 items-start text-gray-800 rounded-lg z-40 cursor-default group-hover:top-7 group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                    <!-- cart items -->
+                                    <div class="flex flex-col gap-7">
+                                        <div
+                                            class="flex gap-5 justify-center items-start">
+                                            <div class="w-20 h-20">
+                                                <img
+                                                    class="object-contain w-full h-full"
+                                                    src="./assets/cart/thumbnail-3.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="text-primaryColor">
+                                                    Daisy Casual Bag
+                                                </h4>
+                                                <h4 class="">1 x $ 800.00</h4>
+                                            </div>
+                                            <p
+                                                class="text-gray-500 cursor-pointer">
+                                                x
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="flex gap-5 justify-center items-start w-full">
+                                            <div class="w-20 h-20">
+                                                <img
+                                                    class="object-contain w-full h-full"
+                                                    src="./assets/cart/thumbnail-2.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="text-primaryColor">
+                                                    Corduroy Shirts
+                                                </h4>
+                                                <h4 class="">1 x $ 3200.00</h4>
+                                            </div>
+                                            <p
+                                                class="text-gray-500 cursor-pointer">
+                                                x
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- cart checkout -->
+                                    <div
+                                        class="w-full border-t pt-7 flex flex-col gap-3 *:flex *:justify-between *:items-center">
+                                        <div class="">
+                                            <span class="text-content font-bold"
+                                                >Total</span
+                                            ><span
+                                                class="text-primaryColor font-bold"
+                                                >$4000.00</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="*:transition-all *:duration-300">
+                                            <button
+                                                class="text-primaryColor border-2 border-primaryColor rounded-md px-5 py-1 hover:bg-my-orange hover:text-white">
+                                                View Cart</button
+                                            ><button
+                                                class="text-white bg-primaryColor border-2 border-primaryColor rounded-md px-5 py-1 hover:bg-my-orange">
+                                                checkout
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                eggs
-                            </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                food
-                            </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                clothes
-                            </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                ice cream
-                            </li>
-                            <li class="hover:bg-secondaryColor py-1 ps-1">
-                                Rice
+                            <li class="relative group" id="account">
+                                <img
+                                    src="assets/icon-user.svg"
+                                    alt=""
+                                    class="" />Account
+                                <!-- account dropdown -->
+                                <ul
+                                    id="account-dropdown"
+                                    class="invisible opacity-0 flex absolute top-10 right-0 border w-fit text-nowrap z-20 flex-col items-start gap-3 bg-white p-3 *:flex *:gap-2 *:items-center *:justify-start text-gray-800 rounded-lg group-hover:top-7 group-hover:opacity-100 group-hover:visible transition-all duration-300 *:pe-5 *:w-full cursor-auto">
+                                    <li class="hover:text-primaryColor">
+                                        <i class="fa-light fa-user text-xl"></i>
+                                        MY Account
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <i
+                                            class="fa-light fa-location-question text-xl"></i
+                                        >Order Tracking
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <i
+                                            class="fa-light fa-house-blank text-xl"></i
+                                        >My Voucher
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <i class="fa-light fa-heart text-xl"></i
+                                        >My Wishlist
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <i
+                                            class="fa-light fa-sliders text-xl"></i>
+                                        Setting
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <i
+                                            class="fa-light fa-arrow-right-from-bracket text-xl"></i>
+                                        Sign Out
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end middle nav -->
+            <!-- start bottom nav -->
+            <nav class="border-b border-gray-200 sticky top-0">
+                <div
+                    class="container flex items-center justify-between h-20 relative">
+                    <!--  nav button -->
+                    <div class="relative grou h-full flex items-center">
                         <div
-                            id="no-result"
-                            class="text-content py-1 ps-1 hidden">
-                            No results found
+                            id="all-categories"
+                            class="flex items-center justify-center bg-primaryColor hover:bg-btnColor px-6 text-lg py-[9px] rounded-md text-white gap-2 cursor-pointer font-semibold transition-all duration-300">
+                            <i
+                                id="all-categories-fIcon"
+                                class="fa-sharp fa-regular fa-grid-2"></i>
+                            Browse All Categories
+                            <i
+                                id="all-categories-icon"
+                                class="fa-regular fa-chevron-down"></i>
+                        </div>
+                        <!-- start dropdown -->
+                        <div
+                            id="all-categories-dropdown"
+                            class="flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] transition-all duration-300 gap-6 items-center justify-center absolute top-28 border border-darkSecondaryColor rounded-lg bg-white z-40 font-semibold py-7 px-7 text-nowrap w-fit left-0 text-content cursor-auto">
+                            <div class="flex justify-center gap-4">
+                                <!-- start left side -->
+                                <div class="flex flex-col gap-4">
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 23.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 24.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 25.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 26.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 27.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                </div>
+                                <!-- end left side -->
+                                <!-- start right side -->
+                                <div class="flex flex-col gap-4">
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 28.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 29.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 30.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 31.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                    <!-- start category -->
+                                    <div
+                                        class="flex justify-start ps-4 cursor-pointer transition-all duration-300 hover:shadow-md hover:border-primaryColor hover:bg-white group cat-parent items-center gap-3 border w-[190px] rounded-md">
+                                        <img
+                                            class="aspect-square w-8"
+                                            src="./assets/categories/asset 32.svg"
+                                            alt="pic" />
+                                        <h4
+                                            class="flex flex-col group-[.cat-parent:hover]:text-primaryColor transition-all duration-300 text-gray-700">
+                                            Milks and
+                                            <span class="">Dairies</span>
+                                        </h4>
+                                    </div>
+                                    <!-- end category -->
+                                </div>
+                                <!-- end right side -->
+                            </div>
+                            <span class="flex items-center gap-1 text-gray-700">
+                                <i
+                                    class="fa-regular fa-circle-plus text-primaryColor text-2xl"></i>
+                                Show more...
+                            </span>
+                        </div>
+                        <!-- end dropdown -->
+                    </div>
+                    <!-- nav items -->
+                    <div
+                        class="relative flex items-center justify-center gap-2 hover:text-primaryColor transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="-fire font-semibold">
+                            <i class="fa-regular fa-fire text-primaryColor"></i>
+
+                            Deals
+                        </h4>
+                    </div>
+                    <div
+                        class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4
+                            class="hover:text-primaryColor font-semibold text-primaryColor">
+                            Home
+                            <i class="fa-regular fa-chevron-down"></i>
+                        </h4>
+                        <ul
+                            class="flex opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] flex-col items-start transition-all duration-300 gap-3 absolute top-28 border rounded-lg bg-white font-semibold z-40 py-5 text-nowrap w-56 left-0 text-content cursor-auto">
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 1
+                            </li>
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 2
+                            </li>
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 3
+                            </li>
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 4
+                            </li>
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 5
+                            </li>
+                            <li class="hover:text-primaryColor w-full ps-5">
+                                Home 6
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="relative flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            About
+                        </h4>
+                    </div>
+                    <div
+                        class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Shop
+                            <i class="fa-regular fa-chevron-down"></i>
+                        </h4>
+                        <ul
+                            class="flex opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] flex-col items-start transition-all duration-300 gap-3 absolute top-28 border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-fit left-0 text-content cursor-auto">
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop Grid – Right Sidebar
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop Grid – Left Sidebar
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop List – Right Sidebar
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop List – Left Sidebar
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop - Wide
+                            </li>
+                            <li
+                                class="relative group side-parent hover:text-primaryColor w-full flex justify-between items-center ps-5 pe-10">
+                                Single Product
+                                <i class="fa-regular fa-angle-right"></i>
+                                <!-- start side menu -->
+                                <ul
+                                    class="flex opacity-0 invisible group-[.side-parent:hover]:opacity-100 group-[.side-parent:hover]:visible group-[.side-parent:hover]:top-[-50px] flex-col items-start transition-all duration-300 gap-3 absolute border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-fit left-[100%] text-content cursor-auto top-10">
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Grid – Right Sidebar
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Grid – Left Sidebar
+                                    </li>
+                                </ul>
+                                <!-- end side menu -->
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop – Filter
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop – Wishlist
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop – Cart
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop – Checkout
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Shop – Compare
+                            </li>
+                            <li
+                                class="relative group side-parent hover:text-primaryColor w-full flex justify-between items-center ps-5 pe-10">
+                                Shop – Invoice
+                                <i class="fa-regular fa-angle-right"></i>
+                                <!-- start side menu -->
+                                <ul
+                                    class="flex opacity-0 invisible group-[.side-parent:hover]:opacity-100 group-[.side-parent:hover]:visible group-[.side-parent:hover]:top-[-50px] flex-col items-start transition-all duration-300 gap-3 absolute border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-60 left-[100%] text-content cursor-auto top-10">
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 1
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 2
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 3
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 4
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 5
+                                    </li>
+                                    <li
+                                        class="hover:text-primaryColor w-full ps-5 pe-10">
+                                        Shop Invoice 6
+                                    </li>
+                                </ul>
+                                <!-- end side menu -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Vendors
+                            <i class="fa-regular fa-chevron-down"></i>
+                        </h4>
+                        <!-- start dropdown -->
+                        <ul
+                            class="flex opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] flex-col items-start transition-all duration-300 gap-3 absolute top-28 border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-fit left-0 text-content cursor-auto">
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors Grid
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors list
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors Details 01
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors Details 02
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors Dashboard
+                            </li>
+                            <li
+                                class="hover:text-primaryColor w-full ps-5 pe-10">
+                                Vendors Guide
+                            </li>
+                        </ul>
+                        <!-- end dropdown -->
+                    </div>
+                    <div
+                        class="group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Mega Menu
+                            <i class="fa-regular fa-chevron-down"></i>
+                        </h4>
+                        <!-- dropdown -->
+                        <div
+                            class="flex justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] items-start transition-all duration-300 absolute top-24 border rounded-lg bg-white z-40 font-semibold gap-10 px-10 py-10 text-nowrap w-full left-0 text-content cursor-auto">
+                            <!-- first section -->
+                            <div class="flex flex-col gap-6 flex-grow">
+                                <h4 class="text-primaryColor">
+                                    Fruit & Vegetables
+                                </h4>
+                                <ul
+                                    class="flex flex-col gap-3 *:transition-all *:duration-300">
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Meat & Poultry</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Fresh Vegetables</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Herbs & Seasonings</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Cuts & Sprouts</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Exotic Fruits & Veggies</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Packaged Produce</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- second section -->
+                            <div class="flex flex-col gap-6 flex-grow">
+                                <h4 class="text-primaryColor">
+                                    Fruit & Vegetables
+                                </h4>
+                                <ul
+                                    class="flex flex-col gap-3 *:transition-all *:duration-300">
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Meat & Poultry</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Fresh Vegetables</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Herbs & Seasonings</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Cuts & Sprouts</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Exotic Fruits & Veggies</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Packaged Produce</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- third section -->
+                            <div class="flex flex-col gap-6 flex-grow">
+                                <h4 class="text-primaryColor">
+                                    Fruit & Vegetables
+                                </h4>
+                                <ul
+                                    class="flex flex-col gap-3 flex-grow *:transition-all *:duration-300">
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Meat & Poultry</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Fresh Vegetables</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Herbs & Seasonings</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Cuts & Sprouts</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Exotic Fruits & Veggies</a>
+                                    </li>
+                                    <li class="hover:text-primaryColor">
+                                        <a href="#">Packaged Produce</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- image section -->
+                            <div
+                                class="relative overflow-hidden group my-parent">
+                                <img
+                                    class="w-full cursor-pointer"
+                                    src="./assets/banner-menu.png"
+                                    alt="" />
+                                <!-- left floating -->
+                                <div
+                                    class="absolute top-10 left-8 flex flex-col gap-5">
+                                    <div class="">
+                                        <p class="text-gray-700 font-normal">
+                                            HOT DEALS
+                                        </p>
+                                        <h4 class="text-2xl text-gray-700">
+                                            Don't Miss
+                                        </h4>
+                                        <h4 class="text-2xl text-gray-700">
+                                            Trending
+                                        </h4>
+                                    </div>
+                                    <span class="block text-2xl text-[#81B13D]"
+                                        >Save to 50%</span
+                                    >
+                                    <button
+                                        class="text-white p-3 bg-primaryColor rounded-full ease-in-out transition-all duration-200 group-[.my-parent:hover]:bg-[#FD6E6E]">
+                                        Shop Now
+                                    </button>
+                                </div>
+                                <!-- right floating -->
+                                <div
+                                    class="absolute top-10 right-8 bg-[#ffd55a] aspect-square flex flex-col rounded-full w-20 justify-center items-center text-gray-700 text-xl">
+                                    <span class="font-bold">25%</span
+                                    ><span class="font-medium">off</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="flex justify-between items-center flex-grow w-full">
-                        <input
-                            class="border-0 focus:border-0 focus:outline-none flex-grow"
-                            type="text"
-                            id="searchInput"
-                            placeholder="Search for items..." />
-                        <i
-                            class="fa-solid fa-magnifying-glass text-content"></i>
+                        class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Blog
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <ul
+                                class="flex opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] flex-col items-start transition-all duration-300 gap-3 absolute top-28 border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-fit left-0 text-content cursor-auto">
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-10">
+                                    Blog Category Grid
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-10">
+                                    Blog Category List
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-10">
+                                    Blog Category Big
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-10">
+                                    Blog Category Wide
+                                </li>
+                                <li
+                                    class="group side-parent relative hover:text-primaryColor w-full flex items-center justify-between ps-5 pe-10">
+                                    Single Post
+                                    <i class="fa-regular fa-angle-right"></i>
+                                    <!-- start side menu -->
+                                    <ul
+                                        class="flex opacity-0 invisible group-[.side-parent:hover]:opacity-100 group-[.side-parent:hover]:visible group-[.side-parent:hover]:top-[-50px] flex-col items-start transition-all duration-300 gap-3 absolute border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-60 left-[100%] text-content cursor-auto top-10">
+                                        <li
+                                            class="hover:text-primaryColor w-full ps-5 pe-10">
+                                            Left Sidebar
+                                        </li>
+                                        <li
+                                            class="hover:text-primaryColor w-full ps-5 pe-10">
+                                            Right Sidebar
+                                        </li>
+                                        <li
+                                            class="hover:text-primaryColor w-full ps-5 pe-10">
+                                            No Sidebar
+                                        </li>
+                                    </ul>
+                                    <!-- end side menu -->
+                                </li>
+                            </ul>
+                        </h4>
                     </div>
-                </form>
-            </div>
-            <!-- right side -->
-            <ul class="flex gap-3 *:flex *:gap-1 text-content">
-                <li class="">
                     <div
-                        class="relative after:content-['3'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
-                        <img src="assets/icon-compare.svg" alt="" class=" " />
-                    </div>
+                        class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Pages
+                            <i class="fa-regular fa-chevron-down"></i>
 
-                    Compare
-                </li>
-                <li class="">
-                    <div
-                        class="relative after:content-['6'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
-                        <img src="assets/icon-heart.svg" alt="" class="" />
+                            <ul
+                                class="flex opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-[100%] flex-col items-start transition-all duration-300 gap-3 absolute top-28 border rounded-lg bg-white z-40 font-semibold py-5 text-nowrap w-fit left-0 text-content cursor-auto">
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Login</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Register</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Forget Password</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Reset Password</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Purchase Guide</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">Terms Of Service</a>
+                                </li>
+                                <li
+                                    class="hover:text-primaryColor w-full ps-5 pe-14">
+                                    <a href="#">404 Page</a>
+                                </li>
+                            </ul>
+                        </h4>
                     </div>
-                    Wishlist
-                </li>
-                <li class="">
                     <div
-                        class="relative after:content-['2'] after:absolute after:top-[-10px] after:bg-primaryColor after:rounded-full after:right-[-10px] after:h-5 after:w-5 after:flex after:justify-center after:items-center text-white">
-                        <img src="assets/icon-cart.svg" alt="" class="" />
+                        class="relative flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
+                        <h4 class="hover:text-primaryColor font-semibold">
+                            Contact
+                        </h4>
                     </div>
-                    Cart
-                </li>
-                <li class="">
-                    <img src="assets/icon-user.svg" alt="" class="" />Account
-                </li>
-            </ul>
+                    <div
+                        class="relative flex items-center justify-center gap-2 h-full">
+                        <i
+                            class="fa-regular fa-headset text-3xl text-gray-700"></i>
+                        <div class="">
+                            <h4 class="text-primaryColor font-bold">
+                                1900 - 888
+                            </h4>
+                            <p class="text-content">24/7 Support Center</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end bottom nav -->
+        </header>
+        <!-- end header -->
+        <!-- start carousel -->
+        <div class="tt">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
         </div>
-    </div>
+
+
 
         <!-- jquery -->
         <script
@@ -192,8 +1032,8 @@
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"></script>
         <!-- owl carousel  -->
-        <!-- <script src="jquery.min.js"></script>
-        <script src="owlcarousel/owl.carousel.min.js"></script> -->
+
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <!-- java script -->
         <script src="main.js"></script>
     </body>

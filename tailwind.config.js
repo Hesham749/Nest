@@ -5,9 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primaryColor: '#3ab77d',
+        primaryColor: '#3bb77e',
+
         secondaryColor: '#d9f7e8',
-        content:'#adadad',
+        darkSecondaryColor: '#bce3c9',
+        content:'#7e7e7e',
+        'my-orange':"#ffc107",
+        btnColor:'#27a56c'
 
     },
     },
