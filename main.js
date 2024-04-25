@@ -1,3 +1,4 @@
+import test from './test.js';
 let cat = document.getElementById("category");
 let dropdown = document.getElementById("dropdown");
 let select = document.querySelectorAll("#select li");
@@ -111,8 +112,34 @@ $("#all-categories").click(function (e) {
 
 
 $('.tt').owlCarousel({
+
+    animateIn: 'fadeIn',
+
+    // animateOut: 'fadeOut',
     loop:true,
     margin:10,
+    dots:true,
     nav:true,
     items:1,
+    autoplay:true,
+    autoplayHoverPause:true,
+
+
+})
+
+
+$('.bb').owlCarousel({
+
+
+
+
+    loop:true,
+    margin:10,
+
+    nav:true,
+    items:4,
+    autoplay:true,
+    autoplayHoverPause:true,
+
+
 })

@@ -1,18 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: quicksand, sans-serif;
 }
 li{
     cursor: pointer;
 }
-.tt{
-    width: 100%;
 
-}
 .owl-item{
     float: left;
+    /* border-radius: 30px;
+    overflow: hidden; */
+
+}
+.bb .owl-item{
+    @apply my-3
+
+}
+.tt .owl-nav{
+
+
+    @apply  flex justify-between absolute top-1/2 -translate-y-1/2 left-0 right-0 mx-auto w-[97%] invisible opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:visible;
+}
+.owl-nav button{
+    background-color: #ffffff;
+    @apply   rounded-full w-12  aspect-square flex items-center justify-center text-3xl  text-content hover:bg-primaryColor hover:text-white transition-all duration-500;
+}
+.owl-nav button span{
+    @apply translate-y-[-2px] ;
+}
+.tt .owl-dots{
+    @apply absolute bottom-4 left-1/2 -translate-x-1/2 w-[97%] flex justify-center gap-1  ;
+}
+.tt .owl-dot{
+    @apply aspect-square w-4 border  rounded-full border-gray-500;
+}
+.tt .owl-dot.active{
+    @apply bg-primaryColor border-primaryColor;
+}
+.tt .owl-item.fadeIn{
+    @apply opacity-0 invisible transition-all duration-700 ease-in-out;
+}
+.tt .owl-item.fadeIn.active{
+    @apply opacity-100 visible transition-all duration-700 ease-in-out;
+}
+
+.bb .owl-nav{
+
+
+    @apply  flex justify-between absolute top-1/3 -translate-y-1/2 left-0 right-0 mx-auto w-[97%] invisible opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:visible;
 }
