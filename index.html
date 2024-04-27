@@ -36,7 +36,7 @@
         <!-- start header -->
         <header class="">
             <!-- start top nav -->
-            <div class="border-b border-gray-200">
+            <div class="border-b border-gray-200 z-[60]">
                 <div
                     class="flex justify-between container items-center h-14 px-3">
                     <!-- start left side -->
@@ -69,7 +69,7 @@
                                 English
                                 <i class="fa-light fa-angle-down"></i>
                                 <ul
-                                    class="absolute flex z-30 flex-col gap-0 invisible bg-white opacity-0 top-32 border px-7 py-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible left-0 transition-all duration-300 *:flex *:flex-col *:gap-0 *:justify-center *:items-start">
+                                    class="absolute flex flex-col z-30 invisible bg-white opacity-0 top-32 border p-3 group-hover:top-7 group-hover:opacity-100 group-hover:visible right-0 transition-all duration-300 *:flex *:gap-3">
                                     <li class=""><span>🇫🇷</span>francais</li>
                                     <li class=""><span>🇩🇪</span> Deutsch</li>
                                     <li class=""><span>🇫🇷</span> pcascsa</li>
@@ -98,7 +98,7 @@
 
             <!-- end top nav -->
             <!-- start middle nav -->
-            <div class="border-b border-gray-200">
+            <div class="border-b border-gray-200 z-50">
                 <div
                     class="py-5 px-3 flex gap-10 container justify-between items-center h-32 z-50">
                     <!-- logo -->
@@ -399,7 +399,7 @@
             </div>
             <!-- end middle nav -->
             <!-- start bottom nav -->
-            <nav class="border-b border-gray-200 sticky top-0 z-10">
+            <nav class="border-b border-gray-200  z-40 bg-white">
                 <div
                     class="container flex items-center justify-between h-20 relative">
                     <!--  nav button -->
@@ -580,7 +580,7 @@
                     <!-- nav items -->
                     <div
                         class="relative flex items-center justify-center gap-2 hover:text-primaryColor transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="-fire font-semibold">
+                        <h4 class="-fire ">
                             <i class="fa-regular fa-fire text-primaryColor"></i>
 
                             Deals
@@ -589,7 +589,7 @@
                     <div
                         class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
                         <h4
-                            class="hover:text-primaryColor font-semibold text-primaryColor">
+                            class="hover:text-primaryColor  text-primaryColor">
                             Home
                             <i class="fa-regular fa-chevron-down"></i>
                         </h4>
@@ -617,13 +617,13 @@
                     </div>
                     <div
                         class="relative flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             About
                         </h4>
                     </div>
                     <div
                         class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Shop
                             <i class="fa-regular fa-chevron-down"></i>
                         </h4>
@@ -725,7 +725,7 @@
                     </div>
                     <div
                         class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Vendors
                             <i class="fa-regular fa-chevron-down"></i>
                         </h4>
@@ -761,7 +761,7 @@
                     </div>
                     <div
                         class="group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Mega Menu
                             <i class="fa-regular fa-chevron-down"></i>
                         </h4>
@@ -889,7 +889,7 @@
                     </div>
                     <div
                         class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Blog
                             <i class="fa-regular fa-chevron-down"></i>
                             <ul
@@ -937,7 +937,7 @@
                     </div>
                     <div
                         class="relative group flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Pages
                             <i class="fa-regular fa-chevron-down"></i>
 
@@ -988,7 +988,7 @@
                     </div>
                     <div
                         class="relative flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer h-full">
-                        <h4 class="hover:text-primaryColor font-semibold">
+                        <h4 class="hover:text-primaryColor ">
                             Contact
                         </h4>
                     </div>
@@ -1076,6 +1076,129 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- end carousel -->
+        <!-- start featured categories -->
+        <div class="flex flex-col gap-5 mb-10 items-start container">
+            <!-- nav -->
+
+            <div class="flex justify-between items-center relative w-full">
+                <div class="flex justify-start gap-5 items-end">
+                    <h4 class="text-3xl font-semibold ">Featured Categories</h4>
+                    <ul class="text-gray-700 text-xl *:transition-all *:duration-300 h-full flex gap-5">
+                        <li class="h-full hover:translate-y-[-4px] hover:text-primaryColor ">cake & Milk</li>
+                        <li class="h-full hover:translate-y-[-4px] hover:text-primaryColor ">Coffee & Teas</li>
+                        <li class="h-full hover:translate-y-[-4px] hover:text-primaryColor ">Pet Food</li>
+                        <li class="h-full hover:translate-y-[-4px] hover:text-primaryColor ">Vegetables</li>
+                    </ul>
+                </div>
+                <!-- owl nav -->
+                <div class="flex gap-3 w-fit justify-center">
+                    <div id="prev" class="rounded-full w-12  aspect-square flex items-center justify-center bg-[#f2f3f4]  text-content hover:bg-primaryColor hover:text-white transition-all duration-300 cursor-pointer"> <i class="fa-regular fa-arrow-left "></i> </div>
+
+                    <div id="next" class="rounded-full w-12  aspect-square flex items-center justify-center bg-[#f2f3f4]  text-content hover:bg-primaryColor hover:text-white transition-all duration-300 cursor-pointer"> <i class="fa-regular fa-arrow-right "></i> </div>
+                </div>
+            </div>
+            <!-- carousel -->
+            <div class="tm w-full overflow-x-hidden relative">
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#f2fce4] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-2.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Strawberry</h4>
+                        <span class="text-content">55 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#fff2ff] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-1.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Vegetables</h4>
+                        <span class="text-content">72 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#fff2eb] w-[135px] pt-7 pb-2  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-3.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Snack</h4>
+                        <span class="text-content">26 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#fdefea] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-4.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Black plum</h4>
+                        <span class="text-content">126 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#fefceb] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-5.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Custard apple</h4>
+                        <span class="text-content">34 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#f2fce4] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-13.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Cake & Milk</h4>
+                        <span class="text-content">26 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#fdefea] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-14.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Coffee & Tea</h4>
+                        <span class="text-content">89 items</span>
+                    </div>
+
+                </div>
+                <!-- item -->
+                <div class="item flex flex-col gap-5 bg-[#ecfeeb] w-[135px] pt-7 pb-3  rounded-xl">
+
+                    <!-- img -->
+                    <img src="assets/cat-15.png" alt="" class="h-20 aspect-square object-contain">
+                    <!-- content -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="text-xl/tight font-medium">Headphone</h4>
+                        <span class="text-content">87 items</span>
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
@@ -1271,7 +1394,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -1396,7 +1519,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -1521,7 +1644,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -1643,7 +1766,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -1768,7 +1891,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -1890,7 +2013,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -2010,7 +2133,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -2133,7 +2256,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -2256,7 +2379,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -2376,7 +2499,7 @@
                         <div class="flex justify-between items-center">
                             <div
                                 class="text-primaryColor flex gap-2 items-center">
-                                $28.58 <del class="text-content">$32.8</del>
+                                $28.58 <del class="text-content line-through">$32.8</del>
                             </div>
                             <!-- add -->
                             <div
@@ -2432,7 +2555,7 @@
             </div>
             <!-- end left side banner -->
             <!-- start carousel -->
-            <div class="bb overflow-hidden w-full mx-4 relative  " id="bb">
+            <div class="bb overflow-hidden w-full mx-[6px] px-[6px] relative  " id="bb">
                 <!-- start item -->
                 <div class="rounded-2xl  item h-full border group img-parent hover:shadow-lg hover:border-darkSecondaryColor relative pt-8">
                     <!-- badge -->
@@ -2504,7 +2627,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -2591,7 +2714,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -2678,7 +2801,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -2765,7 +2888,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -2852,7 +2975,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -2939,7 +3062,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -3026,7 +3149,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -3113,7 +3236,7 @@
 
                             <!-- price -->
                             <div class="flex justify-between items-center mt-4">
-                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content">$32.8</del> </div>
+                                <div class="text-primaryColor flex gap-2 items-center">$28.58 <del class="text-content line-through">$32.8</del> </div>
                             </div>
                             <!-- line -->
                             <div class="w-full mt-2 h-[5px] bg-gradient-to-r from-primaryColor from-50% to-gray-300 to-50%"></div>
@@ -3159,11 +3282,11 @@
                     <div class="flex flex-col gap-5
                        w-[85%] mx-auto absolute left-0 right-0 top-[33.5%] transition-all duration-300 hover:translate-y-[-4px] ease-in-out cursor-pointer">
                        <!-- time -->
-                        <div class="flex justify-around text-xs/normal text-content cursor-auto">
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">334</span> Days</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">06</span> Hours</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">13</span> Mins</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">55</span> Sec</div>
+                        <div class="flex justify-between w-[87%] mx-auto text-xs/normal text-content cursor-auto">
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="days text-primaryColor">0</span> Days</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="hours text-primaryColor">0</span> Hours</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="min text-primaryColor">0</span> Mins</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="sec text-primaryColor">0</span> Sec</div>
                         </div>
                         <!-- description -->
                         <div class="w-full bg-white p-2 rounded-2xl shadow-md cursor-auto">
@@ -3197,7 +3320,7 @@
                                     <div class="flex justify-between items-center">
                                         <div
                                             class="text-primaryColor flex gap-2 items-center">
-                                            $28.58 <del class="text-content">$32.8</del>
+                                            $28.58 <del class="text-content line-through">$32.8</del>
                                         </div>
                                         <!-- add -->
                                         <div
@@ -3227,11 +3350,11 @@
                     <div class="flex flex-col gap-5
                        w-[85%] mx-auto absolute left-0 right-0 top-[33.5%] transition-all duration-300 hover:translate-y-[-4px] ease-in-out cursor-pointer">
                        <!-- time -->
-                        <div class="flex justify-around text-xs/normal text-content cursor-auto">
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">334</span> Days</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">06</span> Hours</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">13</span> Mins</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">55</span> Sec</div>
+                        <div class="flex justify-between w-[87%] mx-auto text-xs/normal text-content cursor-auto">
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="days text-primaryColor">0</span> Days</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="hours text-primaryColor">0</span> Hours</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="min text-primaryColor">0</span> Mins</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="sec text-primaryColor">0</span> Sec</div>
                         </div>
                         <!-- description -->
                         <div class="w-full bg-white p-2 rounded-2xl shadow-md cursor-auto">
@@ -3265,7 +3388,7 @@
                                     <div class="flex justify-between items-center">
                                         <div
                                             class="text-primaryColor flex gap-2 items-center">
-                                            $28.58 <del class="text-content">$32.8</del>
+                                            $28.58 <del class="text-content line-through">$32.8</del>
                                         </div>
                                         <!-- add -->
                                         <div
@@ -3295,11 +3418,11 @@
                     <div class="flex flex-col gap-5
                        w-[85%] mx-auto absolute left-0 right-0 top-[33.5%] transition-all duration-300 hover:translate-y-[-4px] ease-in-out cursor-pointer">
                        <!-- time -->
-                        <div class="flex justify-around text-xs/normal text-content cursor-auto">
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">334</span> Days</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">06</span> Hours</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">13</span> Mins</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">55</span> Sec</div>
+                        <div class="flex justify-between w-[87%] mx-auto text-xs/normal text-content cursor-auto">
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="days text-primaryColor">0</span> Days</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="hours text-primaryColor">0</span> Hours</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="min text-primaryColor">0</span> Mins</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="sec text-primaryColor">0</span> Sec</div>
                         </div>
                         <!-- description -->
                         <div class="w-full bg-white p-2 rounded-2xl shadow-md cursor-auto">
@@ -3333,7 +3456,7 @@
                                     <div class="flex justify-between items-center">
                                         <div
                                             class="text-primaryColor flex gap-2 items-center">
-                                            $28.58 <del class="text-content">$32.8</del>
+                                            $28.58 <del class="text-content line-through">$32.8</del>
                                         </div>
                                         <!-- add -->
                                         <div
@@ -3363,11 +3486,11 @@
                     <div class="flex flex-col gap-5
                        w-[85%] mx-auto absolute left-0 right-0 top-[33.5%] transition-all duration-300 hover:translate-y-[-4px] ease-in-out cursor-pointer">
                        <!-- time -->
-                        <div class="flex justify-around text-xs/normal text-content cursor-auto">
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">334</span> Days</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">06</span> Hours</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">13</span> Mins</div>
-                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="text-primaryColor">55</span> Sec</div>
+                        <div class="flex justify-between w-[87%] mx-auto text-xs/normal text-content cursor-auto">
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="days text-primaryColor">0</span> Days</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="hours text-primaryColor">0</span> Hours</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="min text-primaryColor">0</span> Mins</div>
+                            <div class="flex flex-col items-center justify-center bg-white w-[60px] pt-4 pb-[2px] rounded-[4px]"><span class="sec text-primaryColor">0</span> Sec</div>
                         </div>
                         <!-- description -->
                         <div class="w-full bg-white p-2 rounded-2xl shadow-md cursor-auto">
@@ -3401,7 +3524,7 @@
                                     <div class="flex justify-between items-center">
                                         <div
                                             class="text-primaryColor flex gap-2 items-center">
-                                            $28.58 <del class="text-content">$32.8</del>
+                                            $28.58 <del class="text-content line-through">$32.8</del>
                                         </div>
                                         <!-- add -->
                                         <div
@@ -3424,6 +3547,922 @@
         </div>
 
         <!-- end deals of day -->
+        <!-- start Top Selling -->
+        <div class="container flex justify-between gap-5 items-center mb-10">
+            <!-- section -->
+            <div class="flex flex-col gap-7  min-w-[370px] max-w-full flex-grow ">
+                <!-- header -->
+                <div class="flex flex-col ">
+                    <h4 class="text-2xl">Top Selling</h4>
+                    <div class="h-[2px] w-full mt-2  bg-gradient-to-r from-darkSecondaryColor from-30% to-gray-100 to-30%"></div>
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-1.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-9.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-6.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex flex-col gap-7  min-w-[370px] max-w-full flex-grow ">
+                <!-- header -->
+                <div class="flex flex-col ">
+                    <h4 class="text-2xl">Trending Products</h4>
+                    <div class="h-[2px] w-full mt-2  bg-gradient-to-r from-darkSecondaryColor from-30% to-gray-100 to-30%"></div>
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-4.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-5.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-7.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex flex-col gap-7  min-w-[370px] max-w-full flex-grow ">
+                <!-- header -->
+                <div class="flex flex-col ">
+                    <h4 class="text-2xl">Recently added</h4>
+                    <div class="h-[2px] w-full mt-2  bg-gradient-to-r from-darkSecondaryColor from-30% to-gray-100 to-30%"></div>
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-1.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-4.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-5.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex flex-col gap-7  min-w-[370px] max-w-full flex-grow ">
+                <!-- header -->
+                <div class="flex flex-col ">
+                    <h4 class="text-2xl">Top Rated</h4>
+                    <div class="h-[2px] w-full mt-2  bg-gradient-to-r from-darkSecondaryColor from-30% to-gray-100 to-30%"></div>
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-8.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-9.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                <!-- card -->
+                <div class="flex justify-start items-center gap-5 transition-all duration-300 hover:translate-y-[-4px]">
+                    <!-- image -->
+                    <img src="./assets/thumbnail-7.jpg" alt="" class="max-h-[120px] rounded-md cursor-pointer">
+
+                    <!-- description -->
+                    <div class="  cursor-auto h-full">
+
+
+
+                            <div
+                                class="flex flex-col  items-start h-[120px]  justify-between  *:transition-all *:duration-300 ">
+
+                                <h4 class="hover:text-primaryColor cursor-pointer">
+                                    Nestle Original Coffee-Mate Coffee Creamer
+                                </h4>
+                                <!-- rate -->
+                                <div class="text-content">
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star text-my-orange"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                    (4.0)
+                                </div>
+
+                                <!-- price -->
+                                <div class="flex justify-between items-center ">
+                                    <div
+                                        class="text-primaryColor flex gap-2 items-center">
+                                        $28.58 <del class="text-content line-through">$32.8</del>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end Top Selling -->
+        <!-- start footer banner -->
+        <div class="container mb-10 rounded-2xl overflow-hidden relative ">
+            <!-- image -->
+            <img src="./assets/banner-10.png" alt="" class="object-con">
+            <!-- content -->
+            <div class="flex justify-between w-full px-14 absolute bottom-0 h-[80%]">
+                <!-- banner subscribe -->
+                <div
+                class="  w-[40%] text-wrap flex flex-col gap-9 items-start">
+                <div class="flex flex-col gap-5">
+                    <h4 class=" font-semibold text-4xl text-gray-800">
+                        Stay home & get your daily
+needs from our shop
+                    </h4>
+                    <span class="text-content "
+                        >Start You'r Daily Shopping with <span class="text-primaryColor"> Nest Mart</span></span
+                    >
+                </div>
+                <form
+                    class="w-[70%] flex items-center justify-between bg-white rounded-full overflow-hidden relative">
+                    <img
+                        src="assets/icon-plane.png"
+                        alt=""
+                        class="absolute left-4 z" />
+                    <input
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="your email address"
+                        class="flex-grow h-14 outline-none ps-12 w-full bg-transparent z-10 text-xs" />
+                    <button
+                        class="bg-primaryColor py-4 rounded-full px-8 text-white text-center w-fit transition-all duration-300 hover:bg-btnColor">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+                <img src="assets/banner-9.png" alt="" class="">
+            </div>
+
+        </div>
+        <!-- end footer banner -->
+        <!-- start services -->
+        <div class="container mb-10 flex gap-5 items-center justify-center flex-wrap">
+            <!-- section -->
+            <div class="flex gap-5 items-center justify-start bg-gray-50 p-4  rounded-lg min-w-[288px] flex-grow max-w-full group">
+                <!-- img -->
+                <img src="./assets/icon-1.svg" alt="" class="group-hover:translate-y-[-4px] transition-all duration-300">
+                <!-- text -->
+                <div class="flex flex-col gap-1 items-start justify-start">
+                    <p class="">Best prices & offers
+                    </p>
+                    <span class="text-content">Orders $50 or more
+
+                    </span>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex gap-5 items-center justify-start bg-gray-50 p-4  rounded-lg min-w-[288px] flex-grow max-w-full group">
+                <!-- img -->
+                <img src="./assets/icon-2.svg" alt="" class="group-hover:translate-y-[-4px] transition-all duration-300">
+                <!-- text -->
+                <div class="flex flex-col gap-1 items-start justify-start">
+                    <p class="">Free delivery
+
+                    </p>
+                    <span class="text-content">24/7 amazing services
+
+
+
+                    </span>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex gap-5 items-center justify-start bg-gray-50 p-4  rounded-lg min-w-[288px] flex-grow max-w-full group">
+                <!-- img -->
+                <img src="./assets/icon-3.svg" alt="" class="group-hover:translate-y-[-4px] transition-all duration-300">
+                <!-- text -->
+                <div class="flex flex-col gap-1 items-start justify-start">
+                    <p class="">Great daily deal
+
+                    </p>
+                    <span class="text-content">When you sign up
+
+
+
+                    </span>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex gap-5 items-center justify-start bg-gray-50 p-4  rounded-lg min-w-[288px] flex-grow max-w-full group">
+                <!-- img -->
+                <img src="./assets/icon-4.svg" alt="" class="group-hover:translate-y-[-4px] transition-all duration-300">
+                <!-- text -->
+                <div class="flex flex-col gap-1 items-start justify-start">
+                    <p class="">Wide assortment
+
+                    </p>
+                    <span class="text-content">Mega Discounts
+
+
+
+                    </span>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="flex gap-5 items-center justify-start bg-gray-50 p-4  rounded-lg min-w-[288px] flex-grow max-w-full group">
+                <!-- img -->
+                <img src="./assets/icon-5.svg" alt="" class="group-hover:translate-y-[-4px] transition-all duration-300">
+                <!-- text -->
+                <div class="flex flex-col gap-1 items-start justify-start">
+                    <p class="">Easy returns
+
+                    </p>
+                    <span class="text-content">Within 30 days
+
+
+
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- end services -->
+        <!-- start footer -->
+        <footer class="container flex flex-col gap-16 mb-10">
+            <!-- top section -->
+            <div class="flex flex-wrap gap-5 justify-center items-start text-gray-500 ">
+                <!-- first section -->
+                <div class=" min-w-[310px]  flex flex-col gap-5 items-start flex-grow text-xs/normal">
+                    <!-- image -->
+                    <img src="assets/logo.svg" alt="" class="">
+                    <!-- tittle -->
+                    <p class="max-w-[300px] ">Awesome grocery store website template
+
+                    </p>
+                    <!-- list -->
+                    <ul class="flex gap-2 flex-col items-start *:flex *justify-start *:items-start  *:gap-2 *:cursor-auto">
+                        <!-- item -->
+                        <li class="">
+                            <img src="assets/icon-location.svg" alt="" class="">
+                            <p class="max-w-[300px]">
+
+                                <strong class="text-gray-800 font-semibold" >
+
+                                    Address:
+                                </strong>
+                                 5171 W Campbell Ave undefined Kent, Utah 53127 United States
+                            </p>
+                        </li>
+                        <!-- item -->
+                        <li class="">
+                            <img src="assets/icon-contact.svg" alt="" class="">
+                            <p class="">
+
+                                <strong class="text-gray-800 font-semibold" >
+
+                                    Call Us:
+                                </strong>
+                                (+91) - 540-025-124553
+                            </p>
+                        </li>
+                        <!-- item -->
+                        <li class="">
+                            <img src="assets/icon-email-2.svg" alt="" class="">
+                            <p class="">
+
+                                <strong class="text-gray-800 font-semibold" >
+
+                                    Email:
+                                </strong>
+                                sale@Nest.com
+                            </p>
+                        </li>
+                        <!-- item -->
+                        <li class="">
+                            <img src="assets/icon-clock.svg" alt="" class="">
+                            <p class="">
+
+                                <strong class="text-gray-800 font-semibold" >
+
+                                    Hours:
+                                </strong>
+                                 10:00 - 18:00, Mon - Sat
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- section -->
+                <div class="flex flex-col gap-5 items-start min-w-fit flex-grow max-w-full">
+                    <!-- tittle -->
+                    <h2 class="font-semibold text-xl text-gray-700">Company</h2>
+                    <ul class="flex flex-col gap-3 items-start *:transition-all *:duration-500 *:w-full max-w-[180px]">
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            About Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Sour Cream and Dips
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Privacy Policy
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Terms & Conditions
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Contact Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Support Center
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Careers
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- section -->
+                <div class="flex flex-col gap-5 items-start min-w-fit flex-grow max-w-full">
+                    <!-- tittle -->
+                    <h2 class="font-semibold text-xl text-gray-700">Account</h2>
+                    <ul class="flex flex-col gap-3 items-start *:transition-all *:duration-500 *:w-full max-w-[180px]">
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            About Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Delivery information
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Privacy Policy
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Terms & Conditions
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Contact Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Support Center
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Careers
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- section -->
+                <div class="flex flex-col gap-5 items-start min-w-fit flex-grow max-w-full">
+                    <!-- tittle -->
+                    <h2 class="font-semibold text-xl text-gray-700">Corporate</h2>
+                    <ul class="flex flex-col gap-3 items-start *:transition-all *:duration-500 *:w-full max-w-[180px]">
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            About Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Delivery information
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Privacy Policy
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Terms & Conditions
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Contact Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Support Center
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Careers
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- section -->
+                <div class="flex flex-col gap-5 items-start min-w-fit flex-grow max-w-full ">
+                    <!-- tittle -->
+                    <h2 class="font-semibold text-xl text-gray-700">Popular</h2>
+                    <ul class="flex flex-col gap-3 items-start *:transition-all *:duration-500 *:w-full max-w-[180px]">
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            About Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Delivery information
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Privacy Policy
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Terms & Conditions
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Contact Us
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+
+
+                                Support Center
+
+                        </li>
+                        <!-- item -->
+                        <li class="hover:text-primaryColor hover:translate-x-2">
+                            Careers
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-5 items-start min-w-fit flex-grow ">
+                    <!-- tittle -->
+                    <h2 class="font-semibold text-xl text-gray-700">Install App</h2>
+                    <p class="">From App Store or Google Play
+
+                    </p>
+                    <!-- download -->
+                    <div class="flex justify-between gap-5 mb-8 *:transition-all *:duration-300">
+                        <img src="assets/app-store.jpg" alt="" class=" h-11 hover:translate-y-[-4px] cursor-pointer">
+                        <img src="assets/google-play.jpg" alt="" class=" h-11 hover:translate-y-[-4px] cursor-pointer">
+                    </div>
+                    <p class="">Secured Payment Gateways
+
+                    </p>
+                    <img src="assets/payment-method.png" alt="" class="">
+                </div>
+            </div>
+            <!-- bottom section -->
+            <div class="text-content">
+                <div class="h-[1px] w-full bg-secondaryColor mb-10"></div>
+                <div class="flex justify-center items-center flex-wrap gap-10">
+                    <!-- left -->
+                    <div class="flex-grow">
+
+                        <p class="max-w-[350px]">© 2024, <span class="text-primaryColor">Nest</span> - HTML Ecommerce Template
+                            All rights reserved</p>
+                    </div>
+                    <!-- center -->
+                    <div class="flex justify-center gap-16 items-center flex-grow">
+                        <div class="flex items-center gap-5 ">
+                            <img src="assets/phone-call.svg" alt="" class="h-7 contrast-50 ">
+
+                            <div class="  flex flex-col items-center justify-center ">
+                                <span class="text-primaryColor text-[25px]/none font-semibold">1900 - 6666</span>
+                                <span class="max-w-[120px] text-center leading-none">Working 8:00 - 22:00</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5 ">
+                            <img src="assets/phone-call.svg" alt="" class="h-7 contrast-50 ">
+
+                            <div class="  flex flex-col items-center justify-center ">
+                                <span class="text-primaryColor text-[25px]/none font-semibold">1900 - 8888</span>
+                                <span class="max-w-[120px] text-center leading-none">24/7 Support Center</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="flex flex-col items-end flex-grow">
+                        <div class="text-gray-700 font-semibold flex items-center gap-4">
+                            Follow Us
+
+                            <div class="flex justify-start items-center gap-1 *:transition-all *:duration-500">
+
+                                <a href="#" class=" bg-primaryColor rounded-full aspect-square w-8 flex items-center justify-center hover:translate-y-[-4px] hover:contrast-[.8]">
+                                    <img src="assets/icon-facebook-white.svg" alt="" class="h-6">
+                                </a>
+                                <a href="#" class=" bg-primaryColor rounded-full aspect-square w-8 flex items-center justify-center hover:translate-y-[-4px] hover:contrast-[.8]">
+                                    <img src="assets/icon-twitter-white.svg" alt="" class="h-6">
+                                </a>
+                                <a href="#" class=" bg-primaryColor rounded-full aspect-square w-8 flex items-center justify-center hover:translate-y-[-4px] hover:contrast-[.8]">
+                                    <img src="assets/icon-instagram-white.svg" alt="" class="h-6">
+                                </a>
+                                <a href="#" class=" bg-primaryColor rounded-full aspect-square w-8 flex items-center justify-center hover:translate-y-[-4px] hover:contrast-[.8]">
+                                    <img src="assets/icon-pinterest-white.svg" alt="" class="h-6">
+                                </a>
+                                <a href="#" class=" bg-primaryColor rounded-full aspect-square w-8 flex items-center justify-center hover:translate-y-[-4px] hover:contrast-[.8]">
+                                    <img src="assets/icon-youtube-white.svg" alt="" class="h-6">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="">Up to 15% discount on your first subscribe
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         <!-- jquery -->

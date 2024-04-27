@@ -1,4 +1,4 @@
-import test from './test.js';
+// import {TopSelling} from './components/topSelling/TopSelling.js';
 let cat = document.getElementById("category");
 let dropdown = document.getElementById("dropdown");
 let select = document.querySelectorAll("#select li");
@@ -68,12 +68,16 @@ $("#location-search").keyup(function (e) {
     });
     if (noFound) {
         $("#location-no-result").removeClass("hidden");
-    }else{
+    } else {
         $("#location-no-result").addClass("hidden");
     }
 });
+
+console.log($("#location-search"));
+console.log(document.getElementById("location-search"));
+
 // hiding menus
-$("body").click(function (e) {
+$(document).click(function (e) {
     if (e.target != $("#location")[0] && e.target != $("#location-search")[0]) {
         $("#location-dropdown").addClass("hidden");
         $("#location-dropdown").removeClass("flex");
@@ -110,36 +114,84 @@ $("#all-categories").click(function (e) {
     $("#all-categories-icon").toggleClass("fa-chevron-down");
 });
 
-
-$('.tt').owlCarousel({
-
-    animateIn: 'fadeIn',
+$(".tt").owlCarousel({
+    animateIn: "fadeIn",
 
     // animateOut: 'fadeOut',
-    loop:true,
-    margin:10,
-    dots:true,
-    nav:true,
-    items:1,
-    autoplay:true,
-    autoplayHoverPause:true,
+    loop: true,
+    margin: 10,
+    dots: true,
+    nav: true,
+    items: 1,
+    autoplay: true,
+    autoplayHoverPause: true,
+});
 
+$(".tm").owlCarousel({
+    loop: true,
+    margin: 10,
 
-})
+    nav: false,
+    items: 10,
+    autoplay: false,
 
+});
+$(".bb").owlCarousel({
+    loop: true,
+    margin: 10,
 
-$('.bb').owlCarousel({
+    nav: true,
+    items: 4,
+    autoplay: true,
+    autoplayHoverPause: true,
+});
+// tm carousel nav
+$("#prev")[0].addEventListener('click', function (e) {
+    $(".tm .owl-prev")[0].click();
+});
+$("#next")[0].addEventListener('click', function (e) {
+    $(".tm .owl-next")[0].click();
+});
 
+// countdown
+var countDownDate = new Date("Jul 20, 2024 16:37:52").getTime();
 
+var countDown = setInterval(function () {
+    var now = new Date().getTime();
+    var timeLeft = countDownDate - now;
 
+    var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    [...$(".sec")].map((item) => {
+        $(item)[0].innerText = seconds;
+    });
+    [...$(".min")].map((item) => {
+        $(item)[0].innerText = minutes;
+    });
+    [...$(".hours")].map((item) => {
+        $(item)[0].innerText = hours;
+    });
+    [...$(".days")].map((item) => {
+        $(item)[0].innerText = days;
+    });
 
-    loop:true,
-    margin:10,
-
-    nav:true,
-    items:4,
-    autoplay:true,
-    autoplayHoverPause:true,
-
-
-})
+    if (timeLeft < 0) {
+        clearInterval(countDown);
+        [...$(".sec")].map((item) => {
+            $(item)[0].innerText = "0";
+        });
+        [...$(".min")].map((item) => {
+            $(item)[0].innerText = "0";
+        });
+        [...$(".hours")].map((item) => {
+            $(item)[0].innerText = "0";
+        });
+        [...$(".days")].map((item) => {
+            $(item)[0].innerText = "0";
+        });
+    }
+}, 1000);
