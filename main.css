@@ -34,6 +34,8 @@ a {
 
 .deals-of-the-day .row > div {
     width: calc(100% / 4);
+    padding-left: 13.5px;
+    padding-right: 13.5px;
 }
 
 .deals-of-the-day .section-nav > a {
@@ -1699,11 +1701,11 @@ main > .banner-section {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    padding-top: 5px;
 }
 
 .price {
     font-family: "Quicksand", sans-serif;
+    padding-top: 5px;
 }
 
 .price del {
@@ -1904,9 +1906,12 @@ main > .banner-section {
     border-radius: 4px;
     border: none;
     margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
 }
 
-.deals-countDown > span > :last-child {
+.deals-countDown > span > span:nth-child(2) {
     display: inline-block;
     color: #3bb77e;
     font-size: 20px;
@@ -1920,6 +1925,11 @@ main > .banner-section {
     transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
+.deals-countDown > span > span:nth-child(2):hover {
+    transform: translateY(-5px);
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
 .deals-countDown > span > :first-child {
     position: absolute;
     left: 0;
@@ -1929,8 +1939,10 @@ main > .banner-section {
     bottom: 10px;
     display: block;
     color: #7e7e7e;
-    padding: 0;
+    padding-left: 0;
     overflow: hidden;
     text-transform: capitalize;
     transition: all 0.3s ease;
+    width: 100%;
+    padding-right: 0;
 }
