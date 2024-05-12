@@ -32,6 +32,46 @@ a {
     margin: 0;
 }
 
+.news-letter-content p > span {
+    color: #3bb77e;
+}
+
+.news-letter-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.news-letter-content p {
+    margin-bottom: 45px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.news-letter .row > div {
+    width: 100%;
+}
+
+.news-letter-body {
+    background: url(./assets/banner-10.png) no-repeat center;
+    background-size: cover;
+    padding: 84px 78px;
+    clear: both;
+    display: table;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 230px;
+    position: relative;
+}
+
+.news-letter-body > img {
+    position: absolute;
+    right: 50px;
+    max-width: 40%;
+    bottom: 0;
+}
+
 .top-selling {
     padding: 25px 0;
     margin-bottom: 30px;
@@ -1246,14 +1286,14 @@ main > .banner-section {
     transform: translateY(-50%);
 }
 
-.slider-content .form-subscriber {
+.form-subscriber {
     background-color: #fff;
     max-width: 450px;
     border-radius: 50px;
     display: flex;
 }
 
-.slider-content .form-subscriber > input {
+.form-subscriber > input {
     border: 0;
     border-radius: 50px 0 0 50px;
     background: url("./assets/icon-plane.png") 25px center no-repeat;
@@ -1264,7 +1304,7 @@ main > .banner-section {
     margin: 0;
 }
 
-.slider-content .form-subscriber > button {
+.form-subscriber > button {
     cursor: pointer;
     background: #3bb77e;
     border: 0;
@@ -1277,6 +1317,10 @@ main > .banner-section {
     transition: all 0.3s linear;
     font-family: "Quicksand", sans-serif;
     line-height: 1.5;
+}
+
+.form-subscriber > button:hover {
+    background: #29a56c;
 }
 
 .slider-content > p {
