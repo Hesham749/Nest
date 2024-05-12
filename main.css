@@ -45,9 +45,6 @@ a {
     padding: 25px 0 5px;
 }
 
-.product-list > .row:hover {
-}
-
 .description-area > h4 {
     font-size: 16px;
     color: #253d4e;
@@ -85,17 +82,10 @@ a {
     margin-bottom: 20px;
     transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
     align-items: center;
-    margin-left: -13.5px;
-    margin-right: -13.5px;
 }
 
 .product-list > .row:hover {
     transform: translateY(-5px);
-}
-
-.product-list > .row > * {
-    max-width: 100%;
-    padding: 0 12px;
 }
 
 .deals-of-the-day .row > div {
