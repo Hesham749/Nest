@@ -244,10 +244,10 @@ popularProducts.find("> div").each(function (i, el) {
     });
 });
 // dealsOfDay
-let dealsOfDay = $(".deals-of-day");
+let dealsOfDay = $(".deals-of-the-day .row");
 dealsOfDay.find("> div").each(function (i, el) {
     $(el).addClass("wow fadeInUp");
-    $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 9 + "s"});
+    $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 8 + "s"});
 });
 // dailyBest
 let dailyBest = $(".daily-best .side-banner ");
@@ -268,10 +268,10 @@ bbItems.find("> div").each(function (i, el) {
     });
 });
 // topSelling
-let topSelling = $(".topSelling");
+let topSelling = $(".top-selling .row");
 topSelling.find("> div").each(function (i, el) {
     $(el).addClass("wow fadeInUp");
-    $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 9 + "s"});
+    $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 60 + "s"});
 });
 // footerBanner
 let footerBanner = $(".footerBanner");

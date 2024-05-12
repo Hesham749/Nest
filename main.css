@@ -32,10 +32,74 @@ a {
     margin: 0;
 }
 
+.top-selling {
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+.deals-of-the-day {
+    padding: 25px 0 5px;
+}
+
+.daily-best {
+    padding: 25px 0 5px;
+}
+
+.product-list > .row:hover {
+}
+
+.description-area > h4 {
+    font-size: 16px;
+    color: #253d4e;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.description-area > h4:hover a {
+    color: #3bb77e;
+}
+
+.description-area > h4 > a {
+    color: #253d4e;
+    transition: all 0.3s ease;
+}
+
+.product-list .image {
+    width: calc(100% / 3);
+}
+
+.product-list .description-area {
+    width: calc(200% / 3);
+}
+
+.description-area .price {
+    padding: 0;
+}
+
+.product-list .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-list > .row {
+    margin-bottom: 20px;
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    align-items: center;
+    margin-left: -13.5px;
+    margin-right: -13.5px;
+}
+
+.product-list > .row:hover {
+    transform: translateY(-5px);
+}
+
+.product-list > .row > * {
+    max-width: 100%;
+    padding: 0 12px;
+}
+
 .deals-of-the-day .row > div {
     width: calc(100% / 4);
-    padding-left: 13.5px;
-    padding-right: 13.5px;
 }
 
 .deals-of-the-day .section-nav > a {
@@ -1390,17 +1454,17 @@ main > .banner-section {
 }
 
 .row {
+    --p-x: 1.5rem;
     display: flex;
-
     flex-wrap: wrap;
-    margin-right: -12px;
-    margin-left: -12px;
+    margin-right: calc(-0.5 * var(--p-x));
+    margin-left: calc(-0.5 * var(--p-x));
 }
 
 .row > div {
-    padding-left: 12px;
-    padding-right: 12px;
     max-width: 100%;
+    padding-left: calc(0.5 * var(--p-x));
+    padding-right: calc(0.5 * var(--p-x));
 }
 
 .shop-now-section .banner-content {
@@ -1930,7 +1994,7 @@ main > .banner-section {
     transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-.deals-countDown > span > :first-child {
+.deals-countDown > span > span:first-child {
     position: absolute;
     left: 0;
     right: 0;
@@ -1945,4 +2009,26 @@ main > .banner-section {
     transition: all 0.3s ease;
     width: 100%;
     padding-right: 0;
+}
+
+.top-selling .container > .row > div {
+    width: calc(100% / 4);
+}
+
+.title-section {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+h4.title-section:after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #bce3c9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
