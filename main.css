@@ -1328,6 +1328,8 @@ main > .banner-section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
 .tt .item.first {
