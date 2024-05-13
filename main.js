@@ -46,7 +46,13 @@ $("#all-categories").click(function (e) {
 });
 
 $(document).mouseup(function (e) {
-    if (!$("#all-categories").is(e.target) && $("#all-categories").has(e.target).length === 0 && !$("#all-categories-dropdown").is(e.target) && $("#all-categories-dropdown").has(e.target).length === 0) {
+    if (
+        !$("#all-categories").is(e.target) &&
+        $("#all-categories").has(e.target).length === 0 &&
+        !$("#all-categories-dropdown").is(e.target) &&
+        !$("#all-categories-dropdown .show-more").is(e.target) &&
+        $("#all-categories-dropdown .show-more").has(e.target).length === 0
+    ) {
         //   hide
         $("#all-categories-dropdown").addClass("show");
         $("#all-categories-icon").addClass("fa-chevron-down");
@@ -54,6 +60,12 @@ $(document).mouseup(function (e) {
         $("#all-categories-dropdown").removeClass("show");
         $("#all-categories-icon").removeClass("fa-chevron-up");
     }
+});
+// dropdown-show-more
+$("body").on("click", "[show-more]", function (e) {
+    $(this).parent().parent().find("li.show-more-items").toggleClass("show");
+    $(this).find("i").toggleClass("fa-circle-plus");
+    $(this).find("i").toggleClass("fa-circle-minus");
 });
 
 // popups
@@ -162,11 +174,10 @@ var countDown = setInterval(function () {
 }, 1000);
 
 // loading
-// ! it will change with onload later when using api
-setTimeout(() => {
-    $("#loading").addClass("hidden");
-}, 2000);
 
+$(document).ready(function () {
+    $("#loading").fadeOut(100);
+});
 // dropdown
 
 $("body").on("click", "[data-dropdown-btn]", function () {
@@ -196,20 +207,16 @@ $("body").on("click", ".scrollTop", function () {
 // scrollTop & bottomNav toggle
 $(window).scroll(function () {
     // scrollTop
-    if ($(this).scrollTop() > $(".tt").offset().top + 100) {
-        $(".scrollTop").addClass("visible opacity-100");
-        $(".scrollTop").removeClass("invisible opacity-0");
+    if ($(this).scrollTop() >= $(".tt").offset().top + 100) {
+        $(".scrollTop").show();
     } else {
-        $(".scrollTop").addClass("invisible opacity-0");
-        $(".scrollTop").removeClass("visible opacity-100");
+        $(".scrollTop").fadeOut(200);
     }
     // bottomNav
     if ($(this).scrollTop() >= $(".tt").offset().top) {
-        $(".bottomNav").addClass("fixed top-0 ");
-        $(".bottomNav").removeClass("top-[-50px] ");
+        $(".bottom-nav").addClass("sticky");
     } else {
-        $(".bottomNav").addClass("top-[-50px] ");
-        $(".bottomNav").removeClass("fixed top-0");
+        $(".bottom-nav").removeClass("sticky");
     }
 });
 // wow animation
@@ -274,20 +281,20 @@ topSelling.find("> div").each(function (i, el) {
     $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 60 + "s"});
 });
 // footerBanner
-let footerBanner = $(".footerBanner");
+let footerBanner = $(".news-letter .row >div");
 footerBanner.addClass("wow fadeInUp");
 footerBanner.attr({
     "data-wow-duration": 1 + "s",
     "data-wow-delay": 1 / 3 + "s",
 });
 // Services
-let Services = $(".Services");
+let Services = $(".services .row");
 Services.find("> div").each(function (i, el) {
     $(el).addClass("wow fadeInUp");
     $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 7 + "s"});
 });
 // topFooter
-let topFooter = $(".topFooter");
+let topFooter = $(".footer-mid .row");
 topFooter.find("> div").each(function (i, el) {
     $(el).addClass("wow fadeInUp");
     $(el).attr({"data-wow-duration": 1 + "s", "data-wow-delay": i / 5 + "s"});
