@@ -105,6 +105,19 @@ if ($(".bb").length > 0) {
         });
     });
 }
+if ($(".news").length > 0) {
+    $(".news").each(function (i, bb) {
+        $(bb).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            items: 1,
+            autoplay: true,
+            autoplayHoverPause: true,
+            dots: false,
+        });
+    });
+}
 if ($(".tm").length > 0) {
     $(".tm").each(function (i, tm) {
         $(tm).owlCarousel({
