@@ -129,6 +129,19 @@ if ($(".tm").length > 0) {
         });
     });
 }
+if ($(".product-gallery").length > 0) {
+    $(".product-gallery").each(function (i, item) {
+        $(item).owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            items: 1,
+            autoplay: false,
+            dots: false,
+        });
+    });
+}
+
 // tm card background
 const bg = ["#f2fce4", "#ecfeeb", "#fefceb", "#fdefea", "#fff2eb", "#fff2ff"];
 $(".tm .item").each(function (i, card) {
@@ -220,13 +233,13 @@ $("body").on("click", ".scrollTop", function () {
 // scrollTop & bottomNav toggle
 $(window).scroll(function () {
     // scrollTop
-    if ($(this).scrollTop() >= $(".tt").offset().top + 100) {
+    if ($(this).scrollTop() >= $("main >*:first").offset().top + 100) {
         $(".scrollTop").show();
     } else {
         $(".scrollTop").fadeOut(200);
     }
     // bottomNav
-    if ($(this).scrollTop() >= $(".tt").offset().top) {
+    if ($(this).scrollTop() >= $("main >*:first").offset().top) {
         $(".bottom-nav").addClass("sticky");
     } else {
         $(".bottom-nav").removeClass("sticky");
