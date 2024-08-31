@@ -32,6 +32,33 @@ a {
     margin: 0;
 }
 
+.actions-area {
+    margin-bottom: 50px;
+}
+
+.actions-area .quantity {
+    margin: 0 6px 15px 0;
+    background: #fff;
+    border: 2px solid #3bb77e;
+    font-weight: 700;
+    color: #3bb77e;
+    border-radius: 5px;
+    padding: 11px 20px 11px 30px;
+    max-width: 90px;
+    position: relative;
+}
+
+.attr-details {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.attr-details strong {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
 .single-post:first-child .content h5 {
 }
 
@@ -3040,4 +3067,32 @@ span.stock-status {
 .short-desc {
     margin-bottom: 30px;
     font-size: 17px;
+}
+
+.size-filter > li {
+    display: inline-block;
+}
+
+.size-filter > li a {
+    height: 32px;
+    line-height: 32px;
+    min-width: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 9px;
+    background: #fff;
+    transition: all 0.5s ease-out 0s;
+}
+
+.size-filter > li.active a {
+    color: #fff;
+    background: #3bb77e;
+    border-color: #3bb77e;
+}
+
+.size-filter > li a:hover {
+    color: #fff;
+    background: #3bb77e;
+    border-color: #3bb77e;
 }
